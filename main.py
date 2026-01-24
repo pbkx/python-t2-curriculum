@@ -1,1 +1,1 @@
-from lesson1.classwork import practice
+from lesson2.classwork import practice
