@@ -13,7 +13,21 @@
 # Use turtle to draw a rainbow:
 # Draw 5 semicircles with different colors, each one bigger than the last.
 
+import turtle
+t = turtle.Turtle()
+t.penup(0, -200)
 
+colors = ["red", "orange", "yellow", "green", "blue", "purple"]
+radius = 50
+
+for c in colors:
+    t.pendown()
+    t.circle(radius, 180)
+    t.penup()
+    t.goto(0, -200 + (radius - 50))
+    radius += 20
+
+turtle.done()
 
 # Problem 4
 # Use turtle to draw a grid of 3x3 small squares.
